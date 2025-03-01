@@ -62,9 +62,8 @@ def cria_naipe(naipe):
 #Assim 'Jo' é um dos elementos que deve aparecer na lista
 def cria_baralho():
     baralho=[]
-    naipes = ['o','p','c','e']
     valores = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
-    for i in naipes:
+    for i in 'coep':
         for j in valores:
             baralho.append(j+i)
     return baralho
