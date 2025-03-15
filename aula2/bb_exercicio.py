@@ -284,7 +284,14 @@ dica: return comeco,final #so deixei isso aqui pra voce lembrar como retornar 2 
 '''
 
 def passo_da_busca_binaria(lista,procurando,menor_i,maior_i):
-    return comeco,final #so deixei isso aqui pra voce lembrar como retornar 2 numeros
+    meio = (menor_i+maior_i)//2
+    if (procurando > lista[meio]): menor_i = meio+1
+    if (procurando < lista[meio]): maior_i = meio-1
+    return menor_i,maior_i
+    
+elementos = [40,41,42,53,54,60,70,99,102]
+
+passo_da_busca_binaria(elementos,45,1,5)
 
 '''
 EXPLICACAO
