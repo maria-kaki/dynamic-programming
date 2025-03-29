@@ -91,7 +91,12 @@ e devolve os indices validos para a lista
 '''
 
 def indices_da_lista(lista):
-    return 0
+    c = 0
+    indices = []
+    for i in lista:
+        indices.append(c)
+        c +=1
+    return indices
 
 
 
@@ -101,13 +106,11 @@ Se houver mais de um menor elemento, retorna o indice menor.
 por exemplo, a=[20,30,10] indice_menor(a) retorna 2, pois a[2]==10'''
 
 def indice_menor(lista):
-    num = lista[0]
-    for i in lista:
-        if i < num:
-            num = i
-    for j in lista:
-        if lista[j] == num:
-            return j
+    i_menor = 0
+    for i in range(len(lista)):
+        if lista[i] < lista[i_menor]:
+            i_menor = i
+    return i_menor
 '''
 Na real, o selection sort precisa de varias listas de indices
 
