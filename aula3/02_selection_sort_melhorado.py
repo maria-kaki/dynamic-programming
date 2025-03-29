@@ -91,7 +91,7 @@ e devolve os indices validos para a lista
 '''
 
 def indices_da_lista(lista):
-    pass
+    return 0
 
 
 
@@ -106,7 +106,7 @@ def indice_menor(lista):
         if i < num:
             num = i
     for j in lista:
-        if lista[j] = num:
+        if lista[j] == num:
             return j
 '''
 Na real, o selection sort precisa de varias listas de indices
